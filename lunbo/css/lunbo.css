@@ -1,0 +1,10 @@
+div,ul,li{margin: 0;padding: 0;}
+li{list-style: none;}
+img{border: 0;}
+#container{width: 1130px;height: 500px;position: relative;margin: 0 auto;}
+#container #imgs img{display: none;}
+#container #imgs img.on{display: block;}
+#container #nav li,#container #arrows div{width: 20px;height: 20px;color: #000;background: #fff;float: left;margin-left: 5px;font:14px/20px '黑体';text-align: center;cursor: pointer;}
+#container #nav{position: absolute;right: 30px;bottom: 15px;}
+#container #nav li.on{background: orange;}
+#arrows{position: absolute;left:30px;bottom:15px;}

@@ -1,0 +1,11 @@
+div,ul,li,dl,dt,dd{margin: 0;padding: 0;}
+li{list-style: none;}
+#food{width: 500px;height: 500px;position: relative;}
+img{width: 150px;height: 140px;transform: scale(0.8);}
+#food li{width: 160px;height: 180px;float: left;border: 1px solid #ccc;text-align: center;}
+#food dd{font: 14px/30px '微软雅黑'}
+#food li.nine{position: absolute;top: 182px;left: 162px;}
+#food li:nth-child(4){position: absolute;top: 182px;left: 324px;}
+#food li:nth-child(5){position: absolute;top: 364px;left: 324px;}
+#food li:nth-child(6){position: absolute;top: 364px;left: 162px;}
+#food li:nth-child(7){position: absolute;top: 364px;left: 0;}

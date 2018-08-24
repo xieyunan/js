@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="work1.css">
+</head>
+<body>
+	<div id="food">
+		
+		<ul>
+			<li>
+				<dl>
+					<dt><img src="../js0815/images/z1.gif" /></dt>
+					<dd>植物1</dd>
+				</dl>
+			</li>
+			<li>
+				<dl>
+					<dt><img src="../js0815/images/z1.gif" /></dt>
+					<dd>植物1</dd>
+				</dl>
+			</li>
+			<li>
+				<dl>
+					<dt><img src="../js0815/images/z2.gif" /></dt>
+					<dd>植物2</dd>
+				</dl>
+			</li>
+			<li>
+				<dl>
+					<dt><img src="../js0815/images/z3.gif" /></dt>
+					<dd>植物3</dd>
+				</dl>
+			</li>
+			<li>
+				
+				<dl>
+					<dt><img src="../js0815/images/z4.gif" /></dt>
+					<dd>植物4</dd>
+				</dl>
+			</li>
+			<li>
+				<dl>
+					<dt><img src="../js0815/images/z7.gif" /></dt>
+					<dd>植物7</dd>
+				</dl>
+			</li>
+			<li>
+				<dl>
+					<dt><img src="../js0815/images/z5.gif" /></dt>
+					<dd>植物5</dd>
+				</dl>
+			</li>
+			<li>
+				<dl>
+					<dt><img src="../js0815/images/z6.gif" /></dt>
+					<dd>植物6</dd>
+				</dl>
+			</li>
+			<li class="nine">
+				<dl class="mid">
+					<dt class="middle" id="btn"><img src="../js0815/images/j1.gif" id="pic" /></dt>
+					<dd>点僵尸送植物</dd>
+				</dl>
+			</li>
+		</ul>
+	</div>
+	<script>
+		var oLi=document.getElementsByTagName('li');
+		var oBtn=document.getElementById('btn');
+		var oPic=document.getElementById('pic');
+		var num=i=t=0;//计数器
+		oBtn.onclick=function(){
+			oPic.style.transform="scale(0.7)";
+			oPic.style.transition='1s';
+			view();
+		}
+		function view(){
+			num=parseInt(Math.random()*10+18)//确定循环次数li数
+			console.log(num);
+			if(i<num){//i是已经循环的li的次数 变化的
+				i++;
+				setTimeout(view,200);
+				console.log("dong"+i);
+			}else{
+				oPic.style.transform="scale(0.8)";
+				oPic.style.transition='1s';
+				i=0;//解决到次数后点一次换一次，下一次循环
+			}
+			if(t<oLi.length-1){//先清空，在设置
+				for( var j=0;j<oLi.length-1;j++){
+					oLi[j].style.border="1px solid #ccc";
+					oLi[j].style.background="#fff";
+				}
+				oLi[t].style.border="1px solid #f00";
+				oLi[t].style.background="rgba(255,0,0,.4)";
+				t++;
+			}else{
+				t=0;//解决只转一圈，t到头了。
+			}
+		}
+	</script>
+</body>
+</html>

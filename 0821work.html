@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #pic{position: relative;}
+        #btn{position: absolute;top: 107px;left: 154px;}
+    </style>
+</head>
+<body>
+	<div id="rod">
+        <img src="images/index.png" id="pic"/>
+        <img src="images/point.png" id="btn"/>
+	
+	</div>
+	<script>
+		var oPic=document.getElementById("pic");
+        var oBtn=document.getElementById('btn');
+        var num=0;
+        var b=0;
+        var arr=['30元免费流量包','20喵币','20元免费流量包','10元免费流量包','5喵币','谢谢参与','10喵币','一等奖','2喵币','100元免费流量包'];
+        oBtn.onclick=function(){
+          num=Math.floor(Math.random()*10);
+            b=36*num+720;
+                oPic.style.transform="rotate("+ b + "deg)";
+                oPic.style.transition="3s";
+                setTimeout(function(){
+                alert('恭喜你'+arr[num]); 
+                location.reload();      
+                },3000)
+                
+            }        
+      
+		
+	</script>
+</body>
+</html>
