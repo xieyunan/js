@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div,ul,li{margin: 0;padding: 0;}
+		li{list-style: none;}
+		body{background: #BBE626;/*rgba(0,0,0,0.8)*/;}
+		p{margin-top: 10px;color: #fff;width: 180px; font-size: 20px;font-weight: 800;display: inline-block;}
+		.p1{margin:0  170px 0 400px;}
+		#box{width: 600px;height: 360px;margin: 0 auto 10px; border: 2px solid green;border-radius: 4px; position: relative;}
+		.vs{width: 100px;height: 360px;line-height: 360px;background: #91C718; color: green;font-size: 64px;text-align: center;margin-left: 250px;margin-top: 0px;}
+		#l{width: 150px;height: 100%;position: absolute;top: 0;left: 0;}
+		#l img{width: 150px;height: 140px;border: 2px solid green;margin-top: 110px;}
+		#r{width: 140px;height: 100%;position: absolute;top: 0;right: 3px;}
+		#r img{width: 140px;height: 200px;border: 2px solid green;margin-top: 70px;}
+		.left{float: left;}
+		.left ul{width: 750px;height: 100px;margin-left: 300px;}
+		.left ul li{float: left;}
+		.left li img{width: 100px;height: 90px;border: 1px solid #ccc;}
+		
+		.rig ul{width: 800px;height: 100px;margin-left: 300px;}
+		.rig ul li{float: left;}
+		.rig li img{width: 100px;height: 140px;border: 1px solid #ccc;}
+	</style>
+</head>
+<body>
+<p class="p1">开始挑选你的植物</p><p>开始挑选你的僵尸</p>
+<div id="box">
+	<p class="vs">VS</p>
+	<div id="l"><img src="images/z1.gif"  id="pic1" /></div>
+	<div id="r"><img src="images/j1.gif"  id="pic2" /></div>
+</div>
+	<div class="left">
+		<ul>
+				<li><img src="images/z1.gif" /></li>
+				<li><img src="images/z2.gif" /></li>
+				<li><img src="images/z3.gif" /></li>
+				<li><img src="images/z4.gif" /></li>
+				<li><img src="images/z5.gif" /></li>
+				<li><img src="images/z6.gif" /></li>
+				<li><img src="images/z7.gif" /></li>
+			
+		</ul>
+	</div>
+	<div class="rig">
+		<ul>
+				<li><img src="images/j1.gif" /></li>
+				<li><img src="images/j2.gif" /></li>
+				<li><img src="images/j3.gif" /></li>
+				<li><img src="images/j4.gif" /></li>
+				<li><img src="images/j5.gif" /></li>
+				<li><img src="images/j6.gif" /></li>
+				<li><img src="images/j7.gif" /></li>
+		</ul>
+	</div>
+	<script>
+		var pho1=['z1.gif','z2.gif','z3.gif','z4.gif','z5.gif','z6.gif','z7.gif']
+		var pho2=['j1.gif','j2.gif','j3.gif','j4.gif','j5.gif','j6.gif','j7.gif']
+		var oPic1=document.getElementById('pic1');
+		var oPic2=document.getElementById('pic2');
+		var i=0;
+		
+		var j=0;
+		
+			timer1=setInterval(
+				function(){
+			i=parseInt(Math.random(i)*7)
+		oPic1.src="images/"+pho1[i];
+		}
+		,500)
+
+			timer2=setInterval(function(){
+			j=parseInt(Math.random(j)*7)
+		oPic2.src="images/"+pho2[j];
+		},500)
+// 初始开始轮转	
+
+		var oL=document.getElementById('l');
+		oL.onmouseover=function(){
+			clearInterval(timer1);
+		}
+		var oR=document.getElementById('r');
+		oR.onmouseover=function(){
+			clearInterval(timer2);
+		}
+// 鼠标进入停止
+
+		
+		oL.onmouseout=function(){
+				timer1=setInterval(function(){
+			i=parseInt(Math.random(i)*7)
+		oPic1.src="images/"+pho1[i];
+		},500)
+		}
+
+		oR.onmouseout=function(){
+				timer2=setInterval(function(){
+			j=parseInt(Math.random(j)*7)
+		oPic2.src="images/"+pho2[j];
+		},500)
+		}
+// 鼠标离开轮转	
+	</script>
+</body>
+</html>
