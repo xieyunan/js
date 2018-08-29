@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+            #one{width: 450px;height: 450px;background: #000;font: 16px/20px ;color: #fff;}
+            #two{width: 300px;height: 300px;background: #ff0;font: 16px/20px ;color: #fff;}
+            #in{width: 200px;height: 200px;background: #f00;font: 16px/20px ;color: #fff;}
+        </style>
+</head>
+<body>
+        <div id="one">one
+                <div id="two">two
+                    <div id="in">in</div>
+                </div>  
+            </div>
+            <script>
+            //事件冒泡，事件捕获的本质：dom对象发生多层嵌套时事件的执行顺序
+    //冒泡排序（从里往外）：addEventListener('click',函数，false)监听事件适用于W3C的所有浏览器
+    //捕获顺序（从外往里）：将addEventListener('click',函数,true)
+    //同一元素绑定多个元素是先捕获再绑定
+                var one=document.getElementById('one');
+                one.addEventListener('click', function(){//添加事件监听
+                    console.log(this);
+                },false)
+               
+                var two=document.getElementById('two')
+                two.addEventListener('click', function(e){//添加事件监听
+                    console.log(this);
+                    // e.stopPropagation()
+                },false)
+                var oIn=document.getElementById('in')
+                oIn.addEventListener('click', function(e){//添加事件监听
+                    console.log(this);
+                    // e.stopPropagation()
+                },false)
+    //IE低版本浏览器IE9以下attachEventListener('click',function)
+            /*    document.getElementById('one').attachEventListener('onclick', function(){//添加事件监听
+                    alert('one');
+                    window.event.cancelBubble=true;
+                })      
+                document.getElementById('two').attachEventListener('onclick', function(e){//添加事件监听
+                    alert('two');
+                    window.event.cancelBubble=true;                   
+                })
+                document.getElementById('in').attachEventListener('onclick', function(e){//添加事件监听
+                    alert('in');
+                    window.event.cancelBubble=true;
+                })*/
+            </script>
+</body>
+</html>
