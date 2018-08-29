@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dom元素操作</title>
+</head>
+<body>
+    <script>
+    /*无参函数：代码变化，重复时
+    有参函数：代码大部分相同，且有一定规律，可以将不同的部分设置成参数
+    */
+//dom元素操作：增/删/改/查
+    //创建元素
+        var oH3=document.createElement('h3');
+        oH3.innerHTML="哈哈哈哈";
+        document.body.appendChild(oH3);
+        //创建嵌套元素
+        var oUl=document.createElement('ul');
+        
+        for(var i=0;i<3;i++){           
+           creatLi();
+           newLi(i+'你猜');
+        }
+       document.body.appendChild(oUl);
+        function creatLi(){ //无参
+            var oLi=document.createElement('ll');
+            oUl.appendChild(oLi);
+            oLi.innerHTML="干啥";
+        }
+        function newLi(str){ //有参数
+            var oLi=document.createElement('ll');
+            oUl.appendChild(oLi);
+            oLi.innerHTML=str;     
+        }
+    //删除元素
+    var oLi=document.getElementsByTagName('ll');
+    oUl.removeChild(oLi);//删除一个元素
+    oUl.removechild(oLi[oLi.length-1]);
+    for(var i=0;i<oLi.length;i++){
+        oLi[i]
+    }
+
+    </script>
+</body>
+</html>
