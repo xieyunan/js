@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{margin: 0;padding: 0;width: 100px;height: 100px;background: #000;position: absolute;top: 0;left: 0;}
+    </style>
+</head>
+<body>
+    <div></div>
+    <script>
+        //把鼠标的位置给div--时时刻刻
+        /*块的当前位置x0
+          鼠标的当前位置x1
+          鼠标的终点位置x2
+          块的终点位置x=(x2-x1)
+        */
+        var oDiv=document.getElementsByTagName('div')[0];
+        oDiv.onmousedown=function(a){
+            var e=a||event;
+            var x0=this.offsetLeft;//块的当前位置，this自己
+            var y0=this.offsetTop;
+            var x1=e.clientX;//鼠标点击时的坐标，它在块上---a.clientX
+            var y1=e.clientY;
+            console.log(x1,y1);
+            document.onmousemove=function(b){
+                var ee=b||event;
+                var x2=ee.clientX;//鼠标移动后的坐标---b.clientX
+                var y2=ee.clientY;
+                console.log('坐标：'+ x2,y2);
+
+                var x=(x2-x1)+x0;//块的最终位置----鼠标移动的净距离
+                var y=(y2-y1)+y0;
+                console.log('块坐标：'+ x2,y2);
+                //范围
+                var oW=oDiv.offsetWidth;
+                var disX=document.documentElement.clientWidth-oW||
+                 document.body.clientWidth-oW;
+                var oH=oDiv.offsetHeight;
+                var disY=document.documentElement.clientHeight-oH||
+                 document.body.clientHeight-oH;   
+                 //边界        
+                if(x<50) x=0;
+                if(y<50) y=0;//左上
+                if(x>disX-50) x=disX;
+                if(y>disY-50) y=disY; 
+    
+                oDiv.style.left=x+'px';
+                oDiv.style.top=y+'px';
+            }
+            
+        }
+        
+    
+    </script>
+</body>
+</html>
