@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    *邮箱地址：<input type="text" id="txt">@ 
+    <select id="sel">
+        <option value="">163.com</option>
+        <option value="">126.com</option>
+        <option value="">qq.com</option>
+    </select>
+    <h4>请至少输入11位用户名</h4>
+    
+    *密　　码：<input type="password" id="word">
+    <h4>请输入6-12位密码</h4>
+   
+    *确认密码：<input type="password" id="pass">
+    <h4>请确认两次密码是否相同</h4>
+    
+    *电　　话：<input type="text" id="poh">
+    <h4>请输入11位电话号码</h4>
+
+    <script>
+
+        //*：0次或多次
+            //+:一次或多次（用）
+            //?:重复一次或0次
+            //{n}:匹配n次
+            //{n,}：至少匹配n次
+            //{n,n}:至少几个到几个
+        var oTxt=document.getElementById('txt');
+        var oWord=document.getElementById('word');
+        var oPass=document.getElementById('pass');
+        var oPho=document.getElementById('poh');
+        var oH4=document.getElementsByTagName('h4');
+        var reg=/^.{1,11}$/;
+        var reg1=/^.{6,12}$/;
+        var reg2=/\d{11,}$/;
+        oTxt.onkeyup=function(){   
+            if(reg.test(txt.value)){
+                   oH4[0].innerHTML=txt.value;
+              }else{
+                  oH4[0].innerHTML="输入有误";
+              }
+        }
+        oWord.onkeyup=function(){   
+            if(reg1.test(oWord.value)){
+                   oH4[1].innerHTML=oWord.value.replace(reg1,'输入正确');
+              }else{
+                  oH4[1].innerHTML="输入有误";
+              }
+        }
+        oPass.onkeyup=function(){   
+            if(oWord.value!==oPass.value){
+                  oH4[2].innerHTML="两次输入不一致";
+              }else{
+                oH4[2].innerHTML="两次输入一致";
+              }
+        }
+        oPho.onkeyup=function(){   
+            if(reg2.test(oPho.value)){
+                  oH4[3].innerHTML="输入正确";
+              }else{
+                oH4[3].innerHTML="请输入11位电话号码";
+              }
+        }
+
+    </script>
+</body>
+</html>

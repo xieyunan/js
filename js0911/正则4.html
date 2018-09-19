@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <input type="text">
+        <button>确定</button>
+        <h1>显示内容</h1>
+        <script>
+            //限定字符：出现多少次满足匹配。
+           //.:除了换行，回车\n\r之外的任意一个单个字符，包含特殊符号
+           //[xyz];匹配[]中任意一个
+           //[a-z];匹配指定范围内的任意一个小写字母；
+          var oInput= document.getElementsByTagName('input')[0]; 
+          var oBtn= document.getElementsByTagName('button')[0]; 
+          var oH1=document.getElementsByTagName('h1')[0];
+          //var reg=/h[and]d/;//[]中任意一个字符
+          //var reg=/h[a-z]d/;//a-z中任意一个字母
+          var reg=/h[^a-z]d/;//^非a-z中任意一个字母
+          
+          
+         
+        
+        
+         oInput.onkeyup=function(){//onkeyup---手指抬起
+              var str=oInput.value;
+              if(reg.test(str)){
+                   oH1.innerHTML=str;
+              }else{
+                  oH1.innerHTML="输入有误";
+              }
+             
+          }
+        </script>
+</body>
+</html>

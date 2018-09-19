@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>放大镜</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        #small,#big{float: left;}
+        #small{width: 430px;height: 430px;position: relative;}
+        #drag{width: 215px;height: 215px;background: rgba(0,0,0,0.3);position: absolute;top: 0;left: 0;display: none;}
+        #small img{position: absolute;top: 0;left: 0;}
+        #big{width: 280px;height: 280px;overflow: hidden;position: relative;display: none;margin:50px 0 0 10px; }
+        #big img{position: absolute;top:0;left: 0;}
+    </style>
+</head>
+<body>
+    <div id="small">
+        <img src="images/vkone1.jpg" />
+        <div id="drag"></div>
+    </div>
+    <div id="big">
+        <img src="images/vkone1-1.jpg" />
+    </div>
+    <script>
+        var oSmall=document.getElementById('small');
+        var oDrag=document.getElementById('drag');
+        var oBig=document.getElementById('big');
+        var oBigImg=oBig.getElementsByTagName('img')[0];
+
+        oSmall.onmouseover=function(){
+            oBig.style.display="block";
+            oDrag.style.display="block";
+        }
+        oSmall.onmouseout=function(){
+            oBig.style.display="none";
+            oDrag.style.display="none";
+        }
+        oSmall.onmousemove=function(ev){
+            var e=ev||window.event;
+            var left=e.clientX-oDrag.offsetWidth/2;
+            var top=e.clientY-oDrag.offsetHeight/2;//鼠标的XY坐标
+
+            if(left<0) left=0;//在oDrag中动
+            if(top<0) top=0;
+           var maxX=oSmall.offsetWidth-oDrag.offsetWidth;
+            var maxY=oSmall.offsetHeight-oDrag.offsetHeight;//活动范围
+            if(left>maxX) left=maxX;
+            if(top>maxY) top=maxY;
+            
+            oDrag.style.left=left+"px";
+            oDrag.style.top=top+"px";//块的位置--鼠标的位置给块的
+            
+            var scaleX=left/maxX;
+            var scaleY=top/maxY;
+            oBigImg.style.left=-(oBigImg.offsetWidth-oBig.offsetWidth)*scaleX+"px";
+            oBigImg.style.top=-(oBigImg.offsetHeight-oBig.offsetHeight)*scaleY+"px";
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        dl,dd,dt{margin: 0;padding: 0;}
+        dl{width:600px;height: 300px;border: 1px solid red;float: left;}
+        dt{float: left;border: 1px solid yellow;width:100px;height: 100%;line-height: 300px;text-align: center;}
+        dd{height: 38px;line-height: 38px;}
+        span{display: inline-block;width:80px;}
+        #uName,#sTitle,#con{width: 400px;}
+        #delete,#upset{margin-top: 150px;}
+    </style>
+</head>
+<body>
+    <form action="" method="">
+    <dl>
+        <dt><img src="face/1.jpg" /></dt>
+        <dd>
+            <span>用户名:</span>
+            <input type="text" id="uName" name="uName">
+        </dd>
+        <dd>
+            <span>留言标题:</span>
+            <input type="text" id="sTitle" name="sTitle">
+        </dd>
+        <dd>
+            <span>留言内容:</span>
+            <textarea name="con" id="con" cols="30" rows="10">
+            </textarea>
+        </dd>
+        <dd>
+            <input type="button" value="删除" id="delete"><input type="button" value="修改" id="upset">
+        </dd>
+    </dl>
+</form>
+</body>
+</html>

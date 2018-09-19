@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //元字符：指正则表达式中的一个字符，也代表字符串中的一个字符
+       // var str="g00 very good 444555 666";
+       /*1. var reg=/\d/g;//\d:表示数字;
+        var reg=/\D/g;//\D:不是数字*/
+
+      /*2. var reg=/\s/g;//空白
+        var reg=/\S/g;//不是空白*/
+
+      /*3.  var reg=/\w/g;//字母数字下划线
+        var reg=/\W/g;//不是字母数字下划线*/
+
+      /*4.  var reg=/\\w/g;//\转义字符*/
+
+    //     var str="wow what what www";
+    //    // var reg=/^wow/g;//^字符串必须以wow开始
+    //     var reg=/www$/g;//以什么结束
+        
+        var str="A8";
+        var reg=/^\d\d$/g;//只能输入两个数字
+        var res=str.replace(reg,A);
+    </script>
+</body>
+</html>

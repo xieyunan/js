@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <input type="text">
+        <button>确定</button>
+        <h1>显示内容</h1>
+        <script>
+           //*：0次或多次
+            //+:一次或多次（用）
+            //?:重复0次或一次
+
+          var oInput= document.getElementsByTagName('input')[0]; 
+          var oBtn= document.getElementsByTagName('button')[0]; 
+          var oH1=document.getElementsByTagName('h1')[0];
+          //var reg=/unit [1-9][0-9]*/;//unit 1 ~ unit n
+          //var reg=/unit [1-9][0-9]+/;//unit 10 ~ unit n
+          var reg=/^unit [1-9][0-9]?$/;//unit 1 ~ unit 99
+
+         oInput.onkeyup=function(){//onkeyup---手指抬起
+              var str=oInput.value;
+              if(reg.test(str)){
+                   oH1.innerHTML=str;
+              }else{
+                  oH1.innerHTML="输入有误";
+              }
+             
+          }
+        </script>
+</body>
+</html>

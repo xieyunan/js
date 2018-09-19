@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <input type="text">请输入
+        <h1>显示内容</h1>
+        <script>
+        
+           var oInput= document.getElementsByTagName('input')[0]; 
+          var oH1=document.getElementsByTagName('h1')[0];
+        
+        //非零开头的最多带两位小数
+        var reg=/[1-9]+\.\d{2}/g;
+
+        oInput.onkeyup=function(){
+              var str=oInput.value;
+              if(reg.test(str)){
+                   oH1.innerHTML=str;
+              }
+             
+          }
+        </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录窗口</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        #c{width: 1000px;height: 1000px;position: relative;}
+       #mark{width: 100%;height: 100%;background:rgba(0,0,0,0);position: absolute;top: 0;left: 0;display: none;}
+        #dl{width: 450px;height: 450px;background: red;display: none;position: absolute;top: 100px;left: 400px;}
+    </style>
+</head>
+<body>
+    <div id="c">
+        <button id="but">点我登录</button>
+        <div id="mark"></div>
+    </div>
+    
+    <div id="dl">
+        <button id="close">关闭</button>
+    </div>
+    <script>
+        var oBut=document.getElementById('but');
+        var oDl=document.getElementById('dl');
+        var oMark=document.getElementById('mark');
+        var oClose=document.getElementById('close');
+        oBut.onclick=function(){
+            if(oDl.style.display="none"){
+                oDl.style.display="block";
+                oMark.style.display="block";
+            }else{
+                oDl.style.display="none";
+                oMark.style.display="none";
+            }
+            
+        }
+        oClose.onclick=function(){
+            oDl.style.display="none";
+            oMark.style.display="none";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text">
+    <button>确定</button>
+    <h1>显示内容</h1>
+    
+    <script>
+      var oInput= document.getElementsByTagName('input')[0]; 
+      var oBtn= document.getElementsByTagName('button')[0]; 
+      var oH1=document.getElementsByTagName('h1')[0];
+      var reg=new RegExp('傻逼|大傻子|二愣子','g');
+      //vae reg=/傻逼|二愣子/g;
+      oBtn.onclick=function(){//onkeyup---手指抬起
+          var str=oInput.value.replace(reg,'**');
+          oH1.innerHTML=str;
+      }
+    </script>
+</body>
+</html>

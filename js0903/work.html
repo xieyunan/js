@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <h1></h1>
+        <script>
+            setInterval(
+                function(){
+            var oH1 = document.getElementsByTagName("h1")[0];
+            var curr = new Date();
+            var year = curr.getFullYear();
+            var month = curr.getMonth()+1;//月份加1
+            var day = curr.getDate();
+            
+            var hour = curr.getHours();
+            var minute = curr.getMinutes();
+            var second = curr.getSeconds();
+            // var mini = curr.getMilliseconds();//毫秒
+            var week = curr.getDay(); //星期几
+            
+            hour = hour<10 ? '0'+hour : hour ;
+            minute = minute<10 ? '0'+minute : minute;
+            second = second<10 ? '0'+second : second;
+            
+            oH1.innerHTML = year+'年'+month+'月'+day+'日 &nbsp;&nbsp;'+hour+':'+minute+':'+second+'&nbsp &nbsp今天星期'+week;
+            },1000)
+            
+        </script>  
+</body>
+</html>

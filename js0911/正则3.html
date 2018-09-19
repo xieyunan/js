@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <input type="text">
+        <button>确定</button>
+        <h1>显示内容</h1>
+        <script>
+            //限定字符：出现多少次满足匹配。
+            //*：0次或多次
+            //+:一次或多次（用）
+            //?:重复一次或0次
+            //{n}:匹配n次
+            //{n,}：至少匹配n次
+            //{n,n}:至少几个到几个
+          var oInput= document.getElementsByTagName('input')[0]; 
+          var oBtn= document.getElementsByTagName('button')[0]; 
+          var oH1=document.getElementsByTagName('h1')[0];
+         
+          //var reg =/\w{4,}/;//至少输入四位数字
+            var reg =/^\w{2,6}$/;//至少输入2-6位数字
+         //  var reg =/^\w{4}$/;//必须输入四位数字
+        
+
+        //   var reg=/^\d$/;
+        
+        
+         oInput.onkeyup=function(){//onkeyup---手指抬起
+              
+              if(reg.test(oInput.value)){
+                   oH1.innerHTML=oInput.value;
+              }else{
+                  oH1.innerHTML="输入有误";
+              }
+             
+          }
+        </script>
+</body>
+</html>

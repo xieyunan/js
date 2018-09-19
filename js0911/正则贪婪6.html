@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <input type="text">请输入
+        <h1>显示内容</h1>
+        <script>
+        //"贪婪模式  .*：无法过滤掉任何字符串，一切都是合法的。"  
+           var oInput= document.getElementsByTagName('input')[0]; 
+          var oH1=document.getElementsByTagName('h1')[0];
+         // str="aaa<div>testi</div>ddd<div>aaaaiii</diV>www";
+        //var reg =/<div>.*<\/div>/g;//<div>testi</div>ddd<div>aaaaiii</diV>
+        var reg=/<.*?>/g;//非贪婪模式--过滤掉所有HTML标签
+
+        oInput.onkeyup=function(){//判断是否为html标签
+              var str=oInput.value;
+              if(reg.test(str)){
+                   oH1.innerHTML=str.replace(reg,'&nbsp');//将html标签转为空格
+              }
+             
+          }
+        </script>
+</body>
+</html>

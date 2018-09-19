@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //正则例子--功能：按图索骥
+    //判断字符串----注册时，注册信息是否合法
+    //信息采集--分类采集--爬虫
+    //信息过滤
+    var str="一个自称前端开发工程师的小傻子和她的大傻子和她的蠢货室友，一个自称前端开发工程师的小傻子和她的大傻子和她的蠢货室友";
+    var reg=new RegExp("小傻子|大傻子|蠢货","g");//g:global---查找整个字符串
+
+//str.replace(搜索，替换)---正则表达式，替换
+    str.replace(reg,"小宝贝");//前面是要替换的内容，后面是替换的内容
+
+    var res=str.match(reg);//正则匹配---找到的子串存在数组中
+    var num=res.length;//统计次数
+
+    //查询是否有符合的正则表达式内容，返回bool值。true，有
+    var bool=reg.test(str);//正则当对象找字符串
+
+    //查询符合正则要求的子串，每次执行一次
+    var res =reg.exec(str);
+    res["index"];//子串出现的位置
+    
+/*    四个在正则表达式中常用的函数：
+    replace：替换
+    match：匹配//
+    */
+
+    </script>
+</body>
+</html>
