@@ -1,0 +1,84 @@
+@charset "utf-8";
+/* CSS Document */
+body,ul,li,p,h1,h2,h3,h4,h5,h6{ margin:0; padding:0}
+body{ font-size:14px; line-height:1.7em; color:#666;}
+ul{ list-style:none}
+img{ border:none}
+a{ text-decoration:none; color:#666;}
+/*a:hover{ text-decoration:underline;}*/
+p{color: #666666;}
+.fl{ float:left}
+.fr{ float:right}
+.center{ width:1200px; margin:0 auto;}
+a:hover img {
+	filter: alpha(opacity=80);
+	opacity: 0.8;
+	-webkit-transition: all .2s linear;
+	-moz-transition: all .2s linear;
+	-ms-transition: all .2s linear;
+	transition: all .2s linear;
+}
+.clearfix:after{
+   content:".";/*加一段内容*/
+   display:block;/*让生成的元素以块级元素显示，占满剩余空间*/
+   height:0;/*避免生成的内容破坏原有布局高度*/
+   clear:both;/*清除浮动*/
+   visibility:hidden;/*让生成的内容不可见*/
+  }
+ .clearfix{zoom:1;/*为IE6，7的兼容性设置*/}
+  
+
+  /*banner*/
+  body{background: #F4F4F4;}
+  header .center nav ul li a:nth-of-type(1){color: #666;background: none;}
+  header nav ul li a:nth-of-type(4){color:green;}
+  a:nth-of-type(4){background: url(../images/nav_lg.png) no-repeat center bottom;}
+ .banner{height: 600px;background: url(../images/p-bg.jpg) repeat-x center top;}
+ /*one*/
+ .one .center{height: 450px; background: #fff;margin: 50px auto;}
+ .one .center .left{width: 500px;padding-top: 80px;text-indent: 2em;margin-left: 40px;}
+ .one .center .left h2{color: green; font-size: 28px;font-weight: 400;line-height: 38px;}
+ .one .center .left span,.one .center .left p{color: #666;font-size: 14px;}
+ .one .center .rig{width: 650px;height: 450px;  position: relative;}
+ .one .center .rig img:nth-of-type(1){position: absolute;top: 40px;left: 100px;}
+ .one .center .rig img:nth-of-type(2){width: 200px;height: 200px;border-radius: 200px;border: 2px solid #E9F7F8;      position: absolute;top: 110px;left:220px;}
+ .one .center .rig img:nth-of-type(3){border-radius: 60px; position: absolute;top: 280px;left: 100px;}
+ .one .center .rig img:nth-of-type(4){position: absolute;top: 10px;right: 180px;}
+ .one .center .rig img:nth-of-type(5){width: 130px;height: 130px;position: absolute;top: 150px;right: 30px;}
+ .one .center .rig img:nth-of-type(6){width: 150px;height: 150px;border-radius: 60px; position: absolute;top: 300px;right: 150px;}
+
+ /*two*/
+ .two{width: 100%;height: 1210px; background: url(../images/banner1.jpg) repeat-x center bottom fixed; padding-top: 40px;}
+ .pic{margin :25px 0px 25px 120px;}
+ .two .center h2{color: #D7D5E0; font-size: 28px;font-weight: 400;line-height: 38px;}
+ .two .center h2 span{color: #D7D5E0;font-size: 14px;}
+ .two .center ul li{width: 220px;height: 220px;float: left;margin:0 25px 25px 0; overflow: hidden;transition: all 1s}
+ .two .center ul li img{width: 220px;height: 220px;}
+ .two .center ul li:nth-of-type(5),.two .center ul li:nth-of-type(10){margin-right: 0px;}
+ .two .center ul li img:hover{transform: scale(1.1);transition: all 1s}
+ /*thr*/
+ .thr{width: 100%;background: #DFDEE4;padding: 50px 0;}
+ .thr ul li{width: 970px;margin: auto;}
+ .thr2{width: 100%;background: #FBFCFE;padding: 50px 0;}
+ .thr2 ul li{width: 970px;margin: auto;}
+ .thr3{width: 100%;background: #FBF6F0;padding: 50px 0;}
+ .thr3 ul li{width: 970px;margin: auto;}
+ .thr4{width: 100%;background: #fff;padding: 50px 0;}
+ .thr4 ul li{width: 970px;margin: auto;}
+ .thr5{width: 100%; background: #F2F8EE; padding: 50px 0;}
+ .thr5 ul li{width: 970px;margin: auto;}
+ .thr6{width: 100%;background: #F8F1E9;padding: 50px 0;}
+ .thr6 ul li{width: 970px;margin: auto;}
+ .thr7{width: 100%;background: #FAF7F2;padding: 50px 0;}
+ .thr7 ul li{width: 970px;margin: auto;}
+
+ /*footer*/
+ footer{width: 100%;height: 260px;background: #222222;}
+ footer .center .left{width: 500px;}
+ footer .center .left img{margin:50px 0 5px 0;}
+ footer .center p{color: #949494;font-size: 12px;line-height: 25px;}
+ footer .center .left a img{margin: 10px 15px 0 0;}
+ footer .center .rig{width: 365px;float: right;}
+ footer .center .rig .qr{width: 300px;height: 110px;margin: 50px 0 10px 0;float: right;}
+ footer .center .rig .qr img{width: 110px;margin-left: 30px;}
+ footer .center .rig p{float: right;}
