@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+body,ul,li,p,h1,h2,h3,h4,h5,h6,a{ margin:0; padding:0}
+body{ font-size:14px;  color:#666; }
+ul{ list-style:none}
+img{ border:none}
+a{ text-decoration:none;}
+.fl{ float:left}
+.fr{ float:right}
+.center{ width:1232px; margin:0 auto;}
+.clearfix:after{
+   content:".";/*加一段内容*/
+   display:block;/*让生成的元素以块级元素显示，占满剩余空间*/
+   height:0;/*避免生成的内容破坏原有布局高度*/
+   clear:both;/*清除浮动*/
+   visibility:hidden;/*让生成的内容不可见*/
+  }
+  footer{margin-top: 60px; width: 100%;height: 500px;background: #fff; border-top: 1px solid #D1D7DC;}
+  footer .up{width: 1100px;height: 185px;margin:150px auto 0;border-top: 1px solid #D1D7DC;padding: 35px 60px 0 60px;}
+  footer .up .li1{font-size: 18px;font-weight: 800;margin-bottom: 5px;}
+  footer .up ul{float: left;margin-right: 170px;}
+  footer .up ul li a{color: #8B8B8B;line-height: 20px; font-size: 12px;}
+  footer .down{width: 100%;height: 250px; background: #000;border-top: 2px solid red;}
+  .down .main{width: 1220px;margin: 5px auto 0;}
+  .m_ul1{width: 660px;height: 30px;}
+ .m_ul1 li,.m_ul2 li{float: left;}
+ .down .main a{color: #fff;font-size: 12px;padding-right: 6px;}
+ .m_ul2{width: 1220px;height: 30px;}
+.down .main p{color: #A4A4A4;font-size: 12px;}
+.down .main p{margin: 5px 0;}
+.down .main:nth-child(1) img{vertical-align: -4px;}
+.pic2{margin:8px 5px 0; }
