@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	#news li:nth-child(even){ background:#ccc; }
+	#news li:nth-child(odd){ background:#cc0; }
+	</style>
+</head>
+<body>
+<ul id="news"></ul>	
+
+<script>
+/* even:偶数, odd:奇数 */
+var oUl=document.getElementById("news");
+
+for(var i=1; i<10; i++){
+	oUl.innerHTML += "<li>行不行！</li>";
+}
+
+
+</script>
+</body>
+</html>

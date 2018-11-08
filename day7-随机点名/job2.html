@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+</head>
+<body>
+<ul id="news"></ul>	
+
+<script>
+/* even:偶数, odd:奇数 */
+var oUl=document.getElementById("news");
+
+for(var i=1; i<10; i++){
+	if(i % 2 == 0){
+		oUl.innerHTML += "<li style='background:#ccc'>行不行！</li>";
+	}else{
+		oUl.innerHTML += "<li style='background:#cc0'>行不行！</li>";
+	}
+	
+}
+
+
+</script>
+</body>
+</html>

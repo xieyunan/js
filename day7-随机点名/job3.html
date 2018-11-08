@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+tel: <input type="text" value="0451" />
+<script>
+var str;
+
+//默认情况下,文本框中的内容是字符串
+var oInput = document.getElementsByTagName("input");
+str=parseInt(oInput[0].value);
+
+if( isNaN(str) ){
+	alert("这不是数字");
+}else{
+	alert("是数字");
+}
+</script>
+
+</body>
+</html>

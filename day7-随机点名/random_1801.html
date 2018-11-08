@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>最佳挨揍奖</title>
+</head>
+<body>
+    <div style="padding-top: 50px; font-size: 28px; line-height: 50px; text-align: center;">
+        亲！今天最佳挨揍奖得主是：<br />
+        <div id="View" style="font-size: 60px; line-height: 70px; height: 90px; color: #ff6a00; font-weight: 800;">你猜，猜，猜！</div>
+        <button id="Go" style="padding:10px; font-size: 26px; border-radius:5px; border:1px solid  #d8d8d6; cursor:pointer; ">点俺！全知道！</button>
+    </div>
+
+    <script>
+        var n = ["王雪佳","边一源","韩宇超", "张歆宇","刘长友","杨博","李鹏旭","王雨新","温胜男","刘鑫鑫","吕雪梅","兰明明","张盈雪"];
+        var lock = false;
+        var domDiv = document.getElementById("View");
+
+        function View() {
+            var i = 0;
+            var timer = null;
+            function Go() {
+                i++;
+                if (i == 50) {
+                    var r = parseInt(Math.random() * n.length);
+                    domDiv.innerHTML = n[r];
+
+                    n.splice(r, 1);
+
+                    document.getElementById("Go").innerHTML = "下一位";
+                    document.getElementById("Go").disabled = false;
+                    lock = false;
+                    window.clearInterval(timer);
+                }
+                else {
+                    var r = parseInt(Math.random() * n.length);
+                    domDiv.innerHTML = n[r];
+                }
+            }
+            timer = window.setInterval(Go, 60);
+        }
+
+        document.getElementById("Go").onclick = function () {
+            if (!lock) {
+                if (n.length > 0) {
+                    lock = true;
+                    View();
+                    this.disabled = "disabled";
+                    this.innerHTML = "等待中";
+                } else {
+                    this.disabled = "disabled";
+                    this.innerHTML = "已完结";
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>

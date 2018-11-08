@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<img src="images/t1.jpg" width="200" id="photo" />
+<script>
+var pic = ['t7.jpg','ty2.jpg','t5.jpg','t3.jpg','t1.jpg','t4.jpg','t8.jpg']; //图片数组
+var oPh = document.getElementById("photo");
+var i = 0; //数组下标变量
+
+oPh.onclick = function(){//匿名函数
+	oPh.src = "images/"+ pic[i];
+	i++;
+	
+	i = (i == pic.length) ? 0 : i;
+
+	console.log(i, pic[i]);
+}
+
+
+</script>
+</body>
+</html>

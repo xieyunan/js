@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<img src="images/t5.jpg" width="200" id="photo" />
+<script>
+var pic = ['t7.jpg','ty2.jpg','t5.jpg','t3.jpg','t1.jpg','t4.jpg','t8.jpg']; //图片数组
+var oPh = document.getElementById("photo");
+var i = 0; //数组下标变量
+
+//i=parseInt(Math.random()*10); //10以内的随机数
+
+i=parseInt(Math.random()*7); // 0-6之间的随机数
+oPh.src = "images/"+ pic[i];
+console.log(i);
+
+
+</script>
+</body>
+</html>
