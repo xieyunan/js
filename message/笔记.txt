@@ -1,0 +1,29 @@
+数据库操作
+一.删除 delete from 表名 where 条件
+delete from ccc where id=69; //删除某条记录.常规情况下一定加where
+
+二.修改 update 表名 set 字段1=值, ... , 字段n=值 where 条件
+update ccc set birth = "1937-9-18" where id=68;
+
+三.备份和还原数据表
+1. 备份backkup: 转储SQL文件 (有修改数据库的操作前, 一定要backup)
+2. 还原restore: 运行SQL文件
+
+四.BBS案例步骤 MVC -> MVVM
+1.制作模板:  view(视图) =>.html页面 ==>使用者的操作界面: (客户端: 前端)
+name属性值,往往是后台的SQL的字段名
+
+2. 创建数据库: model(模型) => 数据处理(数据,SQL语句)   : (服务器端: 后台)
+
+3. 编写PHP代码: controller(控制器) => 完成功能         : ( 前/后端)
+
+复用
+
+id
+uName
+face
+stitle
+con
+sTime
+
+
