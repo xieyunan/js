@@ -5,7 +5,7 @@ body{ font-size:14px; line-height:1.7em; color:#666;}
 ul{ list-style:none}
 img{ border:none}
 a{ text-decoration:none; color:#666;}
-/*a:hover{ text-decoration:underline;}*/
+a:hover{ text-decoration:underline;}
 p{color: #666666;}
 .fl{ float:left}
 .fr{ float:right}
@@ -103,7 +103,7 @@ a:hover img {
  .center .news .news_bot .bot_l ul{width: 515px;height: 254px;border-top: 1px dashed #ccc;margin-top: 25px;padding-top: 25px;}
  .center .news .news_bot .bot_l ul a{display: block;margin-bottom: 20px;font-size: 12px;}
  .center .news .news_bot .bot_r{width: 550px;height: 375px;}
- .center .news .news_bot .bot_r h3{color: #333;}
+ .center .news .news_bot .bot_r h3{color: #333;margin: 8px 0;}
  .center .news .news_bot .bot_r p:first-child{font-size: 12px;}
  .center .news .news_bot .bot_r p{font-size: 12px;}
  .center .news .news_bot a:hover{color: green; }
