@@ -5,7 +5,7 @@ body{ font-size:14px; line-height:1.7em; color:#666;}
 ul{ list-style:none}
 img{ border:none}
 a{ text-decoration:none; color:#666;}
-a:hover{ text-decoration:underline;}
+/*a:hover{ text-decoration:underline;}*/
 p{color: #666666;}
 .fl{ float:left}
 .fr{ float:right}
@@ -37,7 +37,7 @@ a:hover img {
  .banner{height: 600px;width: 100%; background: url(../images/header.jpg) repeat-x center center;}
 
  /*tea*/
- .center .tea{height: 480px;margin: 100px 0;}
+ .center .tea{height: 480px;margin: 90px 0;}
  .center .tea .tea_left{width: 750px;}
  .center .tea h2{color: green;font-size: 18px;font-weight: 400;line-height: 60px;}
  .center .tea p{line-height: 38px;}
@@ -103,7 +103,7 @@ a:hover img {
  .center .news .news_bot .bot_l ul{width: 515px;height: 254px;border-top: 1px dashed #ccc;margin-top: 25px;padding-top: 25px;}
  .center .news .news_bot .bot_l ul a{display: block;margin-bottom: 20px;font-size: 12px;}
  .center .news .news_bot .bot_r{width: 550px;height: 375px;}
- .center .news .news_bot .bot_r h3{color: #333;margin: 8px 0;}
+ .center .news .news_bot .bot_r h3{color: #333;margin-top: 10px;}
  .center .news .news_bot .bot_r p:first-child{font-size: 12px;}
  .center .news .news_bot .bot_r p{font-size: 12px;}
  .center .news .news_bot a:hover{color: green; }
