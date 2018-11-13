@@ -32,9 +32,11 @@ a:hover img {
 #top{ width: 55px;height: 55px;border: 1px solid green;background: #fff; border-radius: 40px; position: fixed;right:0;bottom: 0;text-align: center;}
 
 
+header .center nav ul li a:nth-of-type(1){background: url(../images/nav_lg.png) no-repeat center bottom; color: green}
 
  /*banner*/
- .banner{height: 600px;width: 100%; background: url(../images/header.jpg) repeat-x center center;}
+ .banner{height: 600px;width: 100%; background: url(../images/banner1.jpg) repeat-x center center;}
+
 
  /*tea*/
  .center .tea{height: 480px;margin: 90px 0;}

@@ -3,20 +3,30 @@
 <head>
 	<meta charset="UTF-8">
 	<title>product</title>
-	<link rel="stylesheet" href="css/header.css">
+
 	<link rel="stylesheet" href="css/product.css">
+	<link rel="stylesheet" href="css/aos.css" />
+
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/aos.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script>
+		window.onload=function(){
+			new WOW().init();//初始化
+		}
+	</script>
 </head>
 <body>
 <!-- header -->
 <header>
-	<div class="center">
-		<div class="logo fl">
+	<div class="center" >
+		<div class="logo fl" aos="fade-right" >
 			<img src="images/logo.png"/>
 		</div>
-		<nav>
+		<nav aos="fade-left">
 			<ul>
 				<li>
-					<a href="#" >网站首页</a>
+					<a href="index.html" >网站首页</a>
 					<a href="#">品牌介绍</a>
 					<a href="#">新闻资讯</a>
 					<a href="#">产品中心</a>
@@ -25,10 +35,11 @@
 				</li>
 			</ul>
 		</nav>
-	</div>	
+	</div>
 </header>
 <!-- banner -->
-<div class="banner"></div>
+<div class="banner" aos="fade-up">
+</div>
 
 <!-- one -->
 
@@ -40,12 +51,13 @@
 		<p>茶园采用果茶、花茶间种，以虫吃虫，以菌灭菌，以园养茶，以茶养园的种植模式，是中国少有的高纬度生态茶园。</p></h2>
 	</div>
 	<div class="rig fr">
-		<img src="images/p1.png" />
-		<img src="images/p7.png" />
-		<img src="images/p3.png" />
-		<img src="images/p4.jpg" />
-		<img src="images/p5.jpg" />
-		<img src="images/p6.jpg" />
+		<img src="images/p1.png" aos="fade-left"/>
+		
+		<img src="images/p3.png" aos="fade-left"/>
+		<img src="images/p4.jpg" aos="fade-up"/>
+		<img src="images/p7.png" aos="zoom-out-up"/>
+		<img src="images/p5.jpg" aos="fade-right"/>
+		<img src="images/p6.jpg" aos="fade-right"/>
 	</div>
 </div>
 </div>
@@ -53,39 +65,39 @@
 <!-- two -->
 <div class="two">
 <div class="center">
-	<h2>茶山概况 <span>GAIKUANG</span></h2>
+	<h2 id="h2">茶山概况 <span>GAIKUANG</span></h2>
 	<hr>
-	<div class="pic"><img src="images/thr2.jpg" /></div>
+	<div id="pic" ><img src="images/thr2.jpg" /></div>
 	
-	<ul>
-		<li><img src="images/t1.jpg" /></li>
-		<li><img src="images/t2.jpg" /></li>
+	<ul aos="zoom-in">
+		<li><img src="images/t1.jpg" aos="fade-right"/></li>
+		<li><img src="images/t2.jpg" aos="fade-right"/></li>
 		<li><img src="images/t3.jpg" /></li>
-		<li><img src="images/t9.jpg" /></li>
-		<li><img src="images/t6.jpg" /></li>
-		<li><img src="images/t7.jpg" /></li>
-		<li><img src="images/t8.jpg" /></li>
+		<li><img src="images/t9.jpg" aos="fade-left"/></li>
+		<li><img src="images/t6.jpg" aos="fade-left"/></li>
+		<li><img src="images/t7.jpg" aos="fade-right"/></li>
+		<li><img src="images/t8.jpg" aos="fade-right"/></li>
 		<li><img src="images/t4.jpg" /></li>
-		<li><img src="images/t10.jpg" /></li>
-		<li><img src="images/t5.jpg" /></li>
+		<li><img src="images/t10.jpg" aos="fade-left"/></li>
+		<li><img src="images/t5.jpg" aos="fade-left"/></li>
 	</ul>
 </div>	
 </div>
 
 <!-- thr -->
-<div class="thr">
-	<ul>
+<div class="thr" >
+	<ul aos="fade-up-right">
 		<li><img src="images/thr-1.jpg" /></li>
 	</ul>
 </div>
 
-<div class="thr2">
+<div class="thr2" aos="fade-left">
 	<ul>
 		<li><img src="images/thr3.jpg" /></li>
 	</ul>
 </div>
 
-<div class="thr3">
+<div class="thr3" aos="fade-right">
 	<ul>
 		<li><img src="images/thr-4.jpg" /></li>
 	</ul>
@@ -136,6 +148,22 @@
 		</div>
 		</div>
 	</footer>
+	<script>
+		
+		AOS.init({
+			ease:'ease-out-back',
+			duration:1000
+		});
+		var oPic=document.getElementById('pic');
+		var oH2=document.getElementById('h2');
+		oPic.onmouseover=function(){
+			oH2.style.color="#fff";
+			
+		}
+		oPic.onmouseout=function(){
+			oH2.style.color="#ccc";
+		}
 
+</script>
 </body>
 </html>

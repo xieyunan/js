@@ -32,8 +32,9 @@ a:hover img {
  header .center .logo{margin-top: 25px;}
  header .center nav{float: right;}
  header .center nav ul{width: 700px;}
+
+ header nav ul li a:hover{text-decoration: none;}
+
  header .center nav ul li a{display: block;width: 110px; float: left;height: 80px;line-height: 120px;text-align: center;}
- header .center nav ul li a:nth-of-type(1){background: url(../images/nav_lg.png) no-repeat center bottom;}
- header nav ul li a:first-child{color:green;}
  header nav ul li a:hover{color: green;
  	background: url(../images/nav_lg.png) no-repeat center bottom;}
