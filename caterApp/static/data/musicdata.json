@@ -1,0 +1,85 @@
+{
+  "musicData": [{
+      "title": "欲火成诗",
+      "author": "忘忧熙悦",
+      "src": "http://111.41.50.148/amobile.music.tc.qq.com/C400002Y1ro34WieJm.m4a?guid=7184336840&vkey=234504D155F3CDA43918B9E75510C654B3ADDC19DB2072866F1972E66E9320DEFF7C12B2BE0EC48F536D76EBE8FD21BBF960EF4D7A57E8E0&uin=0&fromtag=66",
+      "musicImgSrc": "https://y.gtimg.cn/music/photo_new/T002R300x300M0000006psEY3iWtlB.jpg?max_age=2592000",
+      "lrc": "https://api.bzqll.com/music/netease/lrc?key=579621905&id=526307800"
+    },{
+      "title": "流光记",
+      "author": "银临",
+      "src": "http://dl.stream.qqmusic.qq.com/C400004QxGK535eBMZ.m4a?guid=7184336840&vkey=0F471A421120EC480785A8DB9B4124BCE03B6575AB01DD782D58D1B4423CC129186A46FF02BEE3D5AC524A83690B8550EB97EEDB00C7C88C&uin=0&fromtag=66",
+      "musicImgSrc": "https://y.gtimg.cn/music/photo_new/T002R300x300M000003zt1zY238KIv.jpg?max_age=2592000",
+      "lrc": "https://api.bzqll.com/music/netease/lrc?key=579621905&id=526307800"
+    },{
+      "title": "小巷酒馆",
+      "author": "痴笑",
+      "src": "http://dl.stream.qqmusic.qq.com/C400001BkgeD4NGIMF.m4a?guid=7184336840&vkey=636861C884E8CFEBA0AEB59AFABF14DDDC5F9B09E73DC3571E7F9C9E6D72BD4BC284E6128955FB85F1241700ECB53BD027E31F0FAA6F9522&uin=0&fromtag=66",
+      "musicImgSrc": "https://y.gtimg.cn/music/photo_new/T002R300x300M000000su75m2Sc7aR.jpg?max_age=2592000",
+      "lrc": "https://api.bzqll.com/music/netease/lrc?key=579621905&id=526307800"
+    },{
+      "title": "梨花熏雨",
+      "author": "Braska",
+      "src": "http://111.41.50.149/amobile.music.tc.qq.com/C400000JjZHV0cLmaE.m4a?guid=7184336840&vkey=4B5580C56BF960F0FAA6BB644482AD92EF25560CE4B4964F3D486D5968F5063C307B19ABC143B214CBB6C96B8956E74D820DD84F5CE4160B&uin=0&fromtag=66",
+      "musicImgSrc": "https://y.gtimg.cn/music/photo_new/T002R300x300M000000fIJUw3OqXno.jpg?max_age=2592000",
+      "lrc": "https://api.bzqll.com/music/netease/lrc?key=579621905&id=526307800"
+    },{
+      "title": "花期为约",
+      "author": "漆袖",
+      "src": "http://111.41.50.149/amobile.music.tc.qq.com/C400001XbRPZ2pe0DB.m4a?guid=7184336840&vkey=E1E8A11805AD22758D167D12BDCE51E3FDBA96399BFDD7C0CD80200A6053F40E19E4CBF795E94DF02707F8776D48B4DB66E4850339C8393C&uin=0&fromtag=66",
+      "musicImgSrc": "https://y.gtimg.cn/music/photo_new/T001R300x300M000004WKa8Z3KCHUG.jpg?max_age=2592000",
+      "lrc": "https://api.bzqll.com/music/netease/lrc?key=579621905&id=526307800"
+    },{
+      "title": "四时令",
+      "author": "君百落",
+      "src": "http://111.41.50.149/amobile.music.tc.qq.com/C400003AeSm813r1Kd.m4a?guid=7184336840&vkey=DDFDA3482109D8C6CD26B61A7F66FA7980B01643D94C8B6DAA49A96E7B9F1A42314771C8381E3667195780CFC7AF60DAEC088A4A80F7AE20&uin=0&fromtag=66",
+      "musicImgSrc": "https://y.gtimg.cn/music/photo_new/T001R300x300M000003FTSm21mkM9T.jpg?max_age=2592000",
+      "lrc": "https://api.bzqll.com/music/netease/lrc?key=579621905&id=526307800"
+    },
+    {
+      "title": "一介书生",
+      "author": "林墨之",
+      "src": "http://111.41.50.149/amobile.music.tc.qq.com/C400003WkpET4fF08s.m4a?guid=7184336840&vkey=CCF7480E05DF887614166FC0BA5F7387445E078DB7DCE4505F2EE81314ECD59B4110A9E95DD41D0CA24723CCB79B9C8B5D3F24D4D1C284BD&uin=0&fromtag=66",
+      "musicImgSrc": "https://y.gtimg.cn/music/photo_new/T001R300x300M000002GsmVI28j3WC.jpg?max_age=2592000",
+      "lrc": "https://api.bzqll.com/music/netease/lrc?key=579621905&id=526307800"
+    },{
+      "title": "何必讨债换酒钱",
+      "author": "洛尘泱",
+      "src": "http://111.41.50.149/amobile.music.tc.qq.com/C4000002UY7Q24wuLT.m4a?guid=7184336840&vkey=39AA0D392C5D166D9539E84C8BA46CE69392FA40933D2024137FDA301EF6B53B2977F885722E804760B3379D124B4CA0E59DE3163DB7727F&uin=0&fromtag=66",
+      "musicImgSrc": "https://y.gtimg.cn/music/photo_new/T002R300x300M000000e0gt64V6B0T.jpg?max_age=2592000",
+      "lrc": "https://api.bzqll.com/music/netease/lrc?key=579621905&id=526307800"
+    },
+    {
+    "title": "当真",
+    "author": "蒋家旭",
+    "src": "http://dl.stream.qqmusic.qq.com/C400000mYvlv2HvIg5.m4a?guid=7184336840&vkey=1E8E8036842F0666AD56629F296DD603A10E16CFB88D51BE02035368AEF28CFEE94168867349392E6184781D5DBD955B3E2EEFF77B11EFCE&uin=0&fromtag=38",
+    "musicImgSrc": "https://y.gtimg.cn/music/photo_new/T001R150x150M000001ii8ME2uOv92.jpg?max_age=2592000",
+    "lrc": "https://api.bzqll.com/music/netease/lrc?key=579621905&id=526307800"
+  }, {
+    "title": "再见青春",
+    "author": "任素汐",
+    "src": "http://111.41.50.148/amobile.music.tc.qq.com/C400003fEucx0n8btn.m4a?guid=7184336840&vkey=B88D2DBB962DB3047561C7C1A52C9793B198A86BB520002815C22BE2E3C22B7B66834746624A7CB99ACB410E83245150F4CD93C5D4290297&uin=0&fromtag=66",
+    "musicImgSrc": "https://y.gtimg.cn/music/photo_new/T002R300x300M000003baRUP1BTzvK.jpg?max_age=2592000",
+    "lrc": "https://api.bzqll.com/music/netease/lrc?key=579621905&id=526307800"
+  }, {
+    "title": "你一定要幸福",
+    "author": "虎二",
+    "src": "http://isure.stream.qqmusic.qq.com/C400001gPpBl27Wcnw.m4a?guid=7184336840&vkey=33CDF362CC1200920FE331D073F836695D97BA0E5F7AA728B5AC0E809400925A38824EBBF1D78F737A42ECA7D5497B0123988923FE6CC449&uin=0&fromtag=66",
+    "musicImgSrc": "https://y.gtimg.cn/music/photo_new/T002R300x300M000000Tmz0U4Ep7Dw.jpg?max_age=2592000",
+    "lrc": "https://api.bzqll.com/music/netease/lrc?key=579621905&id=526307800"
+  }, {
+    "title": "倚栏听风",
+    "author": "郑国风",
+    "src": "http://111.41.50.148/amobile.music.tc.qq.com/C40000226Rm433S0Ep.m4a?guid=7184336840&vkey=2BBEEC911E65E922FF74D4433A537D00DABA5683307776A4ADBEEDBB414EACCC54D3EBD318FD05CB5AB4EE16B8C00E51274B44FF8784AD69&uin=0&fromtag=66",
+    "musicImgSrc": "https://y.gtimg.cn/music/photo_new/T002R300x300M000000NzDMQ0wUonY.jpg?max_age=2592000",
+    "lrc": "https://api.bzqll.com/music/netease/lrc?key=579621905&id=526307800"
+  }, {
+    "title": "浪子回头",
+    "author": "茄子蛋",
+    "src": "http://isure.stream.qqmusic.qq.com/C400002hfYKX29pKjC.m4a?guid=7184336840&vkey=FD5ED55DA889314E416E1BDEEA8E39A57F404FFA871EC1318D9389C31414DD26ED1BC89BD27CEC8F272BFF6FBBFB5C7FEE15CD376BD5EC1B&uin=0&fromtag=66",
+    "musicImgSrc": "https://y.gtimg.cn/music/photo_new/T002R300x300M000002XEXGd1zIYxB.jpg?max_age=2592000",
+    "lrc": "https://api.bzqll.com/music/netease/lrc?key=579621905&id=526307800"
+  }
+
+]
+}
