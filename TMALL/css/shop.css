@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
-body,ul,li,p,h1,h2,h3,h4,h5,h6,a ,dl,dt,dd{ margin:0; padding:0}
+body,ul,li,p,h1,h2,h3,h4,h5,h6,a ,dl,dt,dd,button{ margin:0; padding:0}
 body{ font-size:14px;  color:#666; background: #fff;}
 ul{ list-style:none}
 img{ border:none}
@@ -94,8 +94,8 @@ a{ text-decoration:none;}
 .sp_one .p1 a:hover{color: #FF4400;text-decoration: underline;}
 .sp_one .p2{display: inline-block;}
 .sp_one .p2 a{color: #FF4400;margin-left: 40px;}
-.one_bot{width: 100%;height: 130px;border: 1px solid #ccc;margin-top: 10px;position: relative;}
-.one_bot .one_dl1{width: 300px;height: 100px;margin:15px 0;float: left;}
+#one_bot{width: 100%;height: 130px;border: 1px solid #ccc;margin-top: 10px;position: relative;}
+#one_bot .one_dl1{width: 300px;height: 100px;margin:15px 0;float: left;}
 .one_dl1 dt{width: 100px;height: 100px;text-align: center;float: left;margin-right: 5px;}
 .one_dl1 dt img{border: 1px solid #ccc;margin-top: 8px;}
 .one_dl1 dd{margin-bottom: 10px;margin-top: 5px;}
@@ -103,19 +103,20 @@ a{ text-decoration:none;}
 .one_dl1 dd a:hover{text-decoration: underline;color: #FF4400;}
 .bot_ul{position: absolute;bottom: 20px;left: 100px;}
 .bot_ul li{float: left;margin-left: 5px;}
-.one_bot .one_p1{width: 200px;height: 100px;color: #9C9C9C;float:left;margin-left: 40px;font-size: 12px;text-align: center;line-height: 60px;border: 1px dashed #fff;}
-.one_bot .one_p1:hover{border: 1px dashed #ccc;}
-.one_bot .one_p2{width: 50px;height: 80px;float: left;margin: 20px 0 0 30px;}
-.one_bot .one_p2 a{color: #9C9CA8;text-decoration: line-through;}
-.one_bot .one_p2 span{display: block;color: #333;font-weight: 800;}
+#one_bot .one_p1{width: 200px;height: 100px;color: #9C9C9C;float:left;margin-left: 40px;font-size: 12px;text-align: center;line-height: 60px;border: 1px dashed #fff;}
+#one_bot .one_p1:hover{border: 1px dashed #ccc;}
+#one_bot .one_p2{width: 50px;height: 80px;float: left;margin: 20px 0 0 30px;}
+#one_bot .one_p2 a{color: #9C9CA8;text-decoration: line-through;}
+#one_bot .one_p2 span{display: block;color: #333;font-weight: 800;}
 .one_jg{margin-left: 40px;width: 180px;height: 35px;float: left;margin-top: 20px;}
-.one_jg .jg_l{width: 20px;height: 32px;background: #F0F0F0;color: #333;float: left;line-height: 35px;text-align: center;border: 1px solid #ccc;}
-.one_jg #txt{width: 40px;height: 28px;float: left;outline: none;}
-.one_jg .jg_p{color: red;float: left;margin-left: 20px;font-weight: 800;}
+.one_jg #jg_l{width: 20px;height: 32px;background: #F0F0F0;color: #333;float: left;line-height: 35px;text-align: center;border: 1px solid #ccc;}
+/* .one_jg #txt{width: 40px;height: 28px;float: left;outline: none;} */
+.one_jg #jg_p{color: red;float: left;margin-left: 20px;font-weight: 800;}
 .one_sc{float: left;margin: 20px 0 0 20px;}
 .one_sc p a{color: #000;font-size: 12px;}
 .one_sc p a:hover{color: #FF4400;text-decoration: underline;}
-
+#del{color: #000;font-size: 12px;border: 0;background: #fff;}
+#del:hover{color: #FF4400;text-decoration: underline;}
 .seven{width: 100%;height: 100px;}
 .seven .center{width: 1000px;}
 footer{margin-top: 20px; width: 100%;height: 500px;background: #fff; border-top: 1px solid #D1D7DC;padding-top: 10px;}

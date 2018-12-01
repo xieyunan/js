@@ -112,6 +112,8 @@ a{ text-decoration:none;}
 .ban_ul1 .sykuai1 dl:last-child{border-bottom: 0px;}
 .ban_ul1 .sykuai1 dd:hover{color: #0045e4;}
 .ban_ul1 li:hover .sykuai1{display: block;}
+.ban_ul1 .sykuai1 #dl1{height: 36px;line-height: 36px;}
+
 
 
 .ban_ul1 li a{color: #fff;}
